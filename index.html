@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        font-family: "Poppins", sans-serif;
+      }
+      body > div {
+        margin: 15% auto 0;
+        max-width: 720px;
+      }
+      .tabs {
+        display: flex;
+        position: relative;
+      }
+      .tabs .line {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100px;
+        height: 6px;
+        border-radius: 15px;
+        background-color: #4fc74f;
+        transition: all 0.5s ease;
+      }
+      .tab-item {
+        min-width: 80px;
+        padding: 16px 20px 11px 20px;
+        font-size: 20px;
+        text-align: center;
+        color: #3ac235;
+        background-color: #fff;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom: 5px solid transparent;
+        opacity: 0.5;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      .tab-icon {
+        font-size: 24px;
+        width: 32px;
+        position: relative;
+        top: 2px;
+      }
+      .tab-item:hover {
+        opacity: 1;
+        background-color: rgba(49, 219, 100, 0.05);
+        border-color: rgba(46, 235, 28, 0.1);
+      }
+      .tab-item.active {
+        opacity: 1;
+      }
+      .tab-content {
+        padding: 28px 0;
+      }
+      .tab-pane {
+        color: #333;
+        display: none;
+      }
+      .tab-pane.active {
+        display: block;
+      }
+      .tab-pane h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+      </style>
+    
+   
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<div>
+    <!-- Tab items -->
+    <div class="tabs">
+      <div class="tab-item active">
+        <i class="tab-icon fas fa-code"></i>
+        Creator
+      </div>
+      <div class="tab-item">
+        <i class="tab-icon fas fa-cog"></i>
+        Click the cir- I mean text!
+      </div>
+      <div class="line"></div></div>
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <h1>Discord:</h1>
+            nani desuka?#0727
+        </div>
+        <div class="tab-pane">
+            <h1>Click!</h1>
+            <h1 id="number">0</h1>
+        </div>
+   
+    <script src="main.js"></script>
+</body>
+</html>
